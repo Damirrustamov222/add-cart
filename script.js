@@ -44,11 +44,15 @@ newCart.onclick = function (e) {
         const currentTime = new Date();
         const hours = currentTime.getHours();
         const minutes = currentTime.getMinutes();
-
-        const newTodo = {
+        
+ const newTodo = {
+            id: Math.random(),
             title: input.value,
+            itdo:false
             time: `${hours}:${minutes}`
         };
+       
+       console.log(newTodo);
         Item(newTodo);
         input.value = '';
     }
