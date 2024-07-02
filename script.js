@@ -48,7 +48,7 @@ newCart.onclick = function (e) {
  const newTodo = {
             id: Math.random(),
             title: input.value,
-            itdo:false
+            itdo:false,
             time: `${hours}:${minutes}`
         };
        
